@@ -11,7 +11,7 @@ It's also how I like to structure my apps:
 ```
 src/index.js - entry-point for react app
 src/index.css - postcss root styles, shared by whole app
-src/components/* - components used in app, complete with pa;ckage.json files that point main to same-name file
+src/components/* - components used in app, complete with package.json files that point main to same-name file
 src/**/*.test.js - unit tests
 src/**/*.story.js - stories for storybook
 public/ - the webroot, for static assets
