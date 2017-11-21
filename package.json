@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test jest --env=jsdom",
+    "test": "cross-env NODE_ENV=test jest --watchAll --coverage --notify --env=jsdom",
     "start": "webpack-dev-server --progress --quiet --hot --inline --no-info --open --history-api-fallback --content-base=./public",
     "build": "cross-env NODE_ENV=production webpack",
     "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006",
