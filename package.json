@@ -7,8 +7,8 @@
     "test": "cross-env NODE_ENV=test jest --env=jsdom",
     "start": "webpack-dev-server --progress --quiet --hot --inline --no-info --open --history-api-fallback --content-base=./public",
     "build": "cross-env NODE_ENV=production webpack",
-    "storybook": "cross-env NODE_ENV=storybook start-storybook -s ./src/assets -p 6006",
-    "build:storybook": "cross-env NODE_ENV=storybook build-storybook --output-dir ./storybook"
+    "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006",
+    "storybook-build": "cross-env NODE_ENV=storybook build-storybook --output-dir ./storybook"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "@storybook/addon-options": "^3.2.16",
     "@storybook/addon-storyshots": "^3.2.16",
     "@storybook/react": "^3.2.16",
+    "autoprefixer": "^7.1.6",
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -36,7 +37,9 @@
     "react-test-renderer": "^16.1.1",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "webpack-dev-server": "^2.9.4",
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-links": "^3.2.16"
   },
   "babel": {
     "presets": [
@@ -46,11 +49,16 @@
   },
   "jest": {
     "moduleNameMapper": {
-      ".(md|css|scss|svg)$": ".storybook/jest_noop.js"
+      ".(md|css|scss|svg)$": "jest_noop.js"
     },
+    "modulePaths": [".storybook/"],
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/storybook/"
     ]
+  },
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   }
 }
