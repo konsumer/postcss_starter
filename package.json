@@ -52,9 +52,9 @@
       "./.storybook/jest_setup.js"
     ],
     "moduleNameMapper": {
-      ".(md|css|scss|svg)$": "jest_noop.js"
+      ".(md|css|scss|svg)$": ".storybook/jest_noop.js"
     },
-    "modulePaths": [".storybook/"],
+    "modulePaths": [""],
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/storybook/"
