@@ -48,6 +48,9 @@
     ]
   },
   "jest": {
+    "setupFiles": [
+      "./.storybook/jest_setup.js"
+    ],
     "moduleNameMapper": {
       ".(md|css|scss|svg)$": "jest_noop.js"
     },
