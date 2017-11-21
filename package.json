@@ -1,14 +1,14 @@
 {
   "name": "postcss_starter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "quick-start for postcss, react, and storybook",
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest --watchAll --coverage --notify --env=jsdom",
     "start": "webpack-dev-server --progress --quiet --hot --inline --no-info --open --history-api-fallback --content-base=./public",
     "build": "cross-env NODE_ENV=production webpack",
-    "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006",
-    "storybook-build": "cross-env NODE_ENV=storybook build-storybook --output-dir ./storybook"
+    "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006 --static-dir=./public",
+    "storybook-build": "cross-env NODE_ENV=storybook build-storybook --output-dir ./storybook --static-dir=./public"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
   "license": "MIT",
