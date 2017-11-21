@@ -4,7 +4,7 @@ This is a quick-start for [postcss](http://postcss.org/), react, and [storybook]
 
 You can see a running copy [here](http://konsumer.js.org/postcss_starter/).
 
-Fork it, and checkout your copy.
+Fork it, and clone your copy.
 
 It's also how I like to structure my apps:
 
