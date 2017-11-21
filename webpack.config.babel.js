@@ -16,7 +16,6 @@ const postCSSOptions = {
   sourceMap: process.env.NODE_ENV !== 'production',
   'plugins': [
     require('postcss-import'),
-    require('postcss-import'),
     require('postcss-cssnext')
   ]
 }
