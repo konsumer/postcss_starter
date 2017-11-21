@@ -10,7 +10,7 @@
     "storybook": "cross-env NODE_ENV=storybook start-storybook -p 6006 --static-dir=./public",
     "storybook-build": "cross-env NODE_ENV=storybook build-storybook --output-dir ./storybook --static-dir=./public",
     "deploy": "gh-pages-deploy",
-    "_cleangh": "rimraf webpack.config.babel.js README.md src node_modules .storybook webroot coverage .gitignore package.json package-lock.json"
+    "_cleangh": "rimraf webpack.config.babel.js README.md src .storybook webroot coverage package.json package-lock.json"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
   "license": "MIT",
