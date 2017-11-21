@@ -31,3 +31,4 @@ npm i
 * `npm run deploy` - deploy site to [gh-pages](https://pages.github.com/)
 * `npm run storybook` - run your stories as a storybook
 * `npm run storybook-build` - make a production version of your storybook, as static assets, in `storybook/`
+* `npm test -- -u` - update test snapshots
