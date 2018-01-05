@@ -1,6 +1,6 @@
 {
   "name": "postcss_starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "quick-start for postcss, react, and storybook",
   "main": "index.js",
   "scripts": {
